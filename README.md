@@ -93,7 +93,7 @@ foo.myApply(obj, [])
 ```javascript
 Function.prototype.myBind = function (thisArg, ...args) {
     var self = this
-    // new优先级
+    // new 优先级
     var fbound = function () {
         self.apply(this instanceof self ? this : thisArg, args.concat(Array.prototype.slice.call(arguments)))
         console.log(arguments)
@@ -104,7 +104,7 @@ Function.prototype.myBind = function (thisArg, ...args) {
     return fbound;
 }
 
-//测试
+//test
 const obj = { name: '写代码像蔡徐抻' }
 function foo() {
     console.log(this.name)
