@@ -187,7 +187,7 @@ function pAll (_promises) {
     for (let i = 0; i < len; i++) {
       // Promise.resolve 确保把所有数据都转化为 Promise
       Promise.resolve(promises[i]).then(o => { 
-        // 因为 promise 是异步的，保持数组一一对应
+        // promise是异步的，保持数组一一对应
         r[i] = o;
 
         // 如果数组中所有 promise 都完成，则返回结果数组
