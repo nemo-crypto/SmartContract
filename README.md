@@ -406,7 +406,7 @@ var obj = {
 // 深度复制
 function deepClone(obj , target){
     let tar = target || {}
-    //target空或者没有传第二个参数的时候
+    //target为空或者没有传第二个参数的时候
     let tostring = Object.prototype.toString
     for(let key in obj){
         if(obj.hasOwnProperty(key)){
