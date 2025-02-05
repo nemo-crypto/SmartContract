@@ -339,7 +339,7 @@ const deepClone = (source, cache) => {
 
 ```javascript
 可以使用$.extend进行深拷贝
-$.extend(deepCopy, target, object1, [objectN])//第一个参数为true,就是深拷贝
+$.extend(deepCopy, target, object1, [objectN]) //第一个参数为true,就是深拷贝
 
 
 let a = {
