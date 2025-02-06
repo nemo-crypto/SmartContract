@@ -916,7 +916,7 @@ new MyPromise((resolve) => {
 #### 2、Promise.race
 
 ```javascript
-// 由数组中最先改变状态的promise决定
+// 由数组中最先改变状态的promise返回决定
          Promise.race = function(promises){
          return new Promise((resolve,reject)=>{
              for(let i = 0;i <promises.length;i++){
