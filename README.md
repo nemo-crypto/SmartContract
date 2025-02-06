@@ -745,7 +745,7 @@ console.log(curriedSum(1)(2)(3))
  * 2. 使用 Promise.resolve().then 可以把任务加到微任务队列，防止立即执行迭代方法
  * 3. 微任务处理过程中，产生的新的微任务，会在同一事件循环内，追加到微任务队列里
  * 4. 使用 race 在某个任务完成时，继续添加任务，保持任务按照最大并发数进行执行
- * 5. 任务完成后，需要从 doingTasks 中移出
+ * 5. 任务完成后，需要从 doingTasks 队列中移出
  */
 function limit(count, array, iterateFunc) {
   const tasks = []
