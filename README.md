@@ -1335,7 +1335,7 @@ function check( str ) {
 }
 ```
 
-### 35、十进制转换为二进制（用JavaScript实现）
+### 35、十进制转换为二进制（用js实现）
 
 ```javascript
 1. js 中二进制和十进制的相互转换：
