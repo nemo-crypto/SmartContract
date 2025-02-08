@@ -685,7 +685,7 @@ class EventEmitter {
 
   emit(name, once = false) {
     if (this.cache[name]) {
-      // 创建副本，如果回调函数内继续注册相同事件，会造成死循环
+      // 创建副本，如果回调函数内继续注册相同事件，则会造成死循环
       const tasks = this.cache[name].slice()
       for (let fn of tasks) {
         fn();
