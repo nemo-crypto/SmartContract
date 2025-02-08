@@ -1318,7 +1318,7 @@ print(res)
 //
 function check( str ) {
     while( str.length ) { 
-        // 取字符串的第一个字符，在剩余的字符中查找，如果找到，说明有重复
+        // 取字符串的第一个字符，在剩余的字符中查找，如果找到则说明有重复
         if( str.slice(1).indexof( str.charat( 0 ) ) > -1 ) {
             return true; 
         }
