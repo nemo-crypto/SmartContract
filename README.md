@@ -423,7 +423,7 @@ function deepClone(obj , target){
 console.log( deepClone(obj) )
 ```
 
-### 10、实现 chunk 函数，数组进行分组
+### 10、实现chunk函数，数组进行分组
 
 ```javascript
 function chunk (list, size) {
