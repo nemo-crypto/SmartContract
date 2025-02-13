@@ -105,7 +105,7 @@ Function.prototype.myBind = function (thisArg, ...args) {
 }
 
 //test
-const obj = { name: '写代码像蔡徐抻' }
+const obj = { name: 'Nemo' }
 function foo() {
     console.log(this.name)
     //  console.log(arguments)
