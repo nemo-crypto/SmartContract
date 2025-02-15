@@ -496,7 +496,7 @@ function array2Tree(arr){
 }
 
 // 利用递归
-//需要插入父节点id，pid为null或''，就是找root节点，然后root节点再去找自己的子节点
+// 需要插入父节点id，pid为null或''，就是找root节点，然后root节点再去找自己的子节点
 function array2Tree(data, pid){
     let res = [];
     data.forEach(item => {
