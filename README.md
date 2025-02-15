@@ -510,7 +510,7 @@ function array2Tree(data, pid){
 }
 
 ## 树转数组
-//深度优先遍历
+// 深度优先遍历
 function dfs(root,fVisit){
     let stack = Array.isArray(root) ? [...root] : [root];
     while(stack.length){
