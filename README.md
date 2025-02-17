@@ -256,7 +256,7 @@ console.log(b)//{a:11,b:2}
 缺陷：取不到值为 undefined 的 key；如果对象里有函数，函数无法被拷贝下来；无法拷贝copyObj对象原型链上的属性和方法；对象转变为 date 字符串。
 ```
 
-2、递归函数实现深拷贝
+2、使用递归函数实现深拷贝
 
 ```javascript
 function deepClone(source) {
