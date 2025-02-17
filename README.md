@@ -606,7 +606,7 @@ function getFrequentChar (str) {
   return maxBy(Object.entries(dict), x => x[1])
 }
 
-// 以下方案一边进行计数统计一遍进行大小比较，只需要 1 次 O(n) 的算法复杂度
+// 以下方案一边进行计数统计一遍进行大小比较，只需要1次O(n)的算法复杂度
 function getFrequentChar2 (str) {
   const dict = {}
   let maxChar = ['', 0]
