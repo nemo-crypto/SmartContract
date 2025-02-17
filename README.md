@@ -395,7 +395,7 @@ function isObject(obj){
  console.log( deepEqual(obj1 , obj2) )
 ```
 
-### 9、实现深复制的函数 deepClone
+### 9、实现深复制的函数deepClone
 
 ```javascript
 var obj = {
