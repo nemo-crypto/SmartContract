@@ -1290,7 +1290,7 @@ function compose(...fns) {
  
 		return arr;
 	}
-	console.log('分别是', weeks());
+	console.log('依次是', weeks());
 ```
 
 ### 33、字符串压缩
