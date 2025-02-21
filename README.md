@@ -1171,7 +1171,7 @@ var longestPalindrome = function(s) {
 };
 ```
 
-### 30、二叉树的后序遍历
+### 30、二叉树 后序遍历
 
 ```javascript
 // 递归算法
@@ -1312,7 +1312,7 @@ while i < len(s):
 print(res)
 ```
 
-### 34、JS判断一个字符串是否含有重复字符
+### 34、JS判断字符串中是否含有重复字符
 
 ```js
 //
