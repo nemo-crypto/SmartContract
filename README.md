@@ -1247,7 +1247,7 @@ function compose(...fns) {
 }
 ```
 
-### 32、获取每周中任意一天是几号
+### 32、get每周中任意一天是几号
 
 ```javascript
 	/**
