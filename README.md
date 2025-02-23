@@ -159,7 +159,7 @@ export function filter(arr, callback) {
  }
 ```
 
-### 2、JS实现sleep/delay
+### 2、JS实现 sleep/delay
 
 ```javascript
 const sleep = (seconds) => new Promise(resolve => setTimeout(resolve, seconds))
