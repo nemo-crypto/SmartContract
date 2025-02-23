@@ -581,7 +581,7 @@ function treeToArray(tree) {
   tree.forEach((item) => {
     if (item.children) {
       obj.push( item, ...item.children )
-      // ES6新增的 删除对象的属性 Reflect.deleteProperty(对象，属性名)
+      // ES6新增的删除对象的属性 Reflect.deleteProperty(对象，属性名)
       Reflect.deleteProperty(item,'children')
     } else {
       obj.push(item)
