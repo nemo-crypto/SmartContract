@@ -980,7 +980,7 @@ console.log(recursionFlat(source))
 console.log(reduceFlat(source))
 ```
 
-### 22、对象扁平化
+### 22、对象扁平化处理
 
 ```javascript
 function objectFlat(obj = {}) {
