@@ -1171,7 +1171,7 @@ var longestPalindrome = function(s) {
 };
 ```
 
-### 30、二叉树 后序遍历
+### 30、二叉树后序遍历
 
 ```javascript
 // 递归算法
