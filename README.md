@@ -190,7 +190,7 @@ function pAll (_promises) {
         // promise是异步的，保持数组一一对应
         r[i] = o;
 
-        // 如果数组中所有 promise 都完成，则返回结果数组
+        // 如果数组中所有 promise 都完成，则返回结果是数组
         if (++count === len) {
           resolve(r)
         }
