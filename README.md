@@ -620,7 +620,7 @@ function getFrequentChar2 (str) {
 }
 ```
 
-### 15、实现new
+### 15、实现new()
 
 ```javascript
 function myNew(Func, ...args) {
