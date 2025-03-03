@@ -88,7 +88,7 @@ Function.prototype.myApply = function(thisArg, args) {
 foo.myApply(obj, [])
 ```
 
-#### 1.3、实现bind
+#### 1.3、实现bind()
 
 ```javascript
 Function.prototype.myBind = function (thisArg, ...args) {
