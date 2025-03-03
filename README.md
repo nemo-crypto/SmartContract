@@ -72,7 +72,7 @@ Function.prototype.myCall = function(thisArg, ...args) {
 foo.myCall(obj)
 ```
 
-#### 1.2、实现apply
+#### 1.2、实现apply()
 
 ```javascript
 Function.prototype.myApply = function(thisArg, args) {
