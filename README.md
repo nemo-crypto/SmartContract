@@ -128,7 +128,7 @@ function find(arr,callback){
          }
 ```
 
-#### 1.5、reduce函数
+#### 1.5、reduce()函数
 
 ```javascript
  function reduce(arr,callback,initValue){
