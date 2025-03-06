@@ -173,7 +173,7 @@ function delay (func, seconds, ...args) {
 }
 ```
 
-### 3、js实现Promise.all
+### 3、js实现Promise.all()
 
 ```javascript
 function pAll (_promises) {
