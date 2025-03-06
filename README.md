@@ -297,7 +297,7 @@ function cloneDeep(source, hash = new WeakMap()) {
 }
 ```
 
-3、兼容多种数据类型
+3、兼容多种数据类型 
 
 ```javascript
 const deepClone = (source, cache) => {
