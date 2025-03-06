@@ -56,7 +56,7 @@ int CurSeaListTail(LinkList L,int sealoc)
 
 ### 1、JS实现call、apply、bind
 
-#### 1.1、实现call
+#### 1.1、实现call()
 
 ```javascript
 Function.prototype.myCall = function(thisArg, ...args) {
