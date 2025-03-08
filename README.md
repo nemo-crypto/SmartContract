@@ -822,9 +822,9 @@ async function parallelSum(...args) {
 
 ### 19、js实现 vue 双向绑定
 
-### 20、promise
+### 20、promise()
 
-#### 1、promise
+#### 1、promise()
 
 ```javascript
 // 建议阅读 [Promises/A+ 标准](https://promisesaplus.com/)
