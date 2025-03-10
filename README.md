@@ -65,7 +65,7 @@ Function.prototype.myCall = function(thisArg, ...args) {
     thisArg[fn] = this              // this指向调用call的对象,即我们要改变this指向的函数
     const result = thisArg[fn](...args)  // 执行当前函数
     delete thisArg[fn]              // 删除我们声明的fn属性
-    return result                  // 返回函数执行结果
+    return result                  // 返回函数的执行结果
 }
 
 //测试
