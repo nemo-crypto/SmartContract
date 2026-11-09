@@ -1,8 +1,8 @@
-# Smart Contract Learning · Solidity / Rust / Move / Vyper 中文学习笔记
+# Smart Contract Learning · Solidity / Rust / Move / Vyper 业务 Demo 与中文教程
 
 Solidity、Rust、Move 与 Vyper 中文学习笔记及可执行业务 Demo。四种实现围绕交付订单托管展开：付款、交付、结算、超时退款与争议仲裁。
 
-**代码入口：[四语言业务 Demo](demos/README.md)** · [业务状态机与资产流](docs/business-flow.md) · [学习路线](docs/learning-path.md)。
+**代码入口：[四语言业务 Demo](demos/README.md)** · [26 项测试验证记录](docs/validation.md) · [业务状态机与资产流](docs/business-flow.md) · [学习路线](docs/learning-path.md)。
 
 Solidity / Vyper 在本地 EVM 执行合约与测试；Rust 是纯标准库状态机；Move 是 Aptos Move 模拟额度资源账本。默认不连接公网、不部署合约，也不读取真实钱包。
 
