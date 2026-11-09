@@ -1,0 +1,18 @@
+{
+  "name": "smart-contract-learning-demos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Solidity, Vyper, Rust and Move business workflow demos for smart contract learning",
+  "keywords": ["smart-contracts", "solidity", "vyper", "rust", "move", "escrow", "tutorial"],
+  "scripts": {
+    "test": "npm run test:solidity",
+    "test:solidity": "node --test demos/evm-tests/solidity.test.mjs",
+    "test:vyper": "node --test demos/evm-tests/vyper.test.mjs",
+    "test:rust": "cargo test --manifest-path demos/rust/Cargo.toml",
+    "demo:rust": "cargo run --manifest-path demos/rust/Cargo.toml",
+    "test:move": "aptos move test --package-dir demos/move"
+  },
+  "devDependencies": {"ethers": "6.16.0", "ganache": "7.9.2", "solc": "0.8.30"},
+  "engines": {"node": ">=22"}
+}

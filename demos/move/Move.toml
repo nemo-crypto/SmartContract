@@ -1,0 +1,11 @@
+[package]
+name = "DeliveryEscrowDemo"
+version = "1.0.0"
+
+[addresses]
+demo = "0xA"
+
+[dependencies.MoveStdlib]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "aptos-cli-v9.6.0"
+subdir = "aptos-move/framework/move-stdlib"

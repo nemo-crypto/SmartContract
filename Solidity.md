@@ -1,3 +1,5 @@
+> 可执行业务示例：[交付订单托管 Demo](demos/solidity/README.md)，包含完整流程、异常处理与测试命令。
+
 ## Solidity
 
 ### 1. 开发环境搭建

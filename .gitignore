@@ -1,0 +1,10 @@
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+demos/artifacts/
+target/
+build/
+.aptos/
+.env
+.env.local

@@ -1,0 +1,39 @@
+name: Contract workflow demos
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  evm:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: python -m pip install -r demos/vyper/requirements.txt
+      - run: npm run test:solidity
+      - run: npm run test:vyper
+  rust:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test --locked --manifest-path demos/rust/Cargo.toml
+      - run: cargo run --locked --manifest-path demos/rust/Cargo.toml
+  move:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Aptos CLI 9.6.0
+        run: |
+          curl -fsSL --retry 3 https://github.com/aptos-labs/aptos-core/releases/download/aptos-cli-v9.6.0/aptos-cli-9.6.0-Ubuntu-22.04-x86_64.zip -o "$RUNNER_TEMP/aptos.zip"
+          mkdir -p "$RUNNER_TEMP/aptos-cli"
+          unzip "$RUNNER_TEMP/aptos.zip" -d "$RUNNER_TEMP/aptos-cli"
+          chmod +x "$RUNNER_TEMP/aptos-cli/aptos"
+          echo "$RUNNER_TEMP/aptos-cli" >> "$GITHUB_PATH"
+      - run: aptos move test --package-dir demos/move
