@@ -6,7 +6,7 @@
 
 ```sh
 python3.12 -m venv .venv
-.venv/bin/python -m pip install -r demos/vyper/requirements.txt
+.venv/bin/python -m pip install -r demos/vyper/requirements-lock.txt
 npm ci
 VYPER_BIN="$PWD/.venv/bin/vyper" npm run test:vyper
 ```
