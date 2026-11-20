@@ -6,12 +6,12 @@ jobs:
   evm:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
         with:
           node-version-file: .nvmrc
           cache: npm
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7.1.0
         with:
           python-version: '3.12'
       - run: npm ci
@@ -21,14 +21,14 @@ jobs:
   rust:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
       - uses: dtolnay/rust-toolchain@stable
       - run: cargo test --locked --manifest-path demos/rust/Cargo.toml
       - run: cargo run --locked --manifest-path demos/rust/Cargo.toml
   move:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
       - name: Install Aptos CLI 9.6.0
         run: |
           curl -fsSL --retry 3 https://github.com/aptos-labs/aptos-core/releases/download/aptos-cli-v9.6.0/aptos-cli-9.6.0-Ubuntu-22.04-x86_64.zip -o "$RUNNER_TEMP/aptos.zip"
